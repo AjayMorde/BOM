@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1> Assignment 17</h1>
+    <h1>Q-1(a)</h1>
+    <p> console ==></p>
+    <hr>
+    <h1>(b)</h1><h2>* Location Object</h2>
+    <p><span>location.href</span>==>That Give us the URL.<br>
+        It is property sets or returns the entire URL of the current page. Syntax.<br>Return the href property: location.href.<br>
+        <br>
+        <span>location.pathname</span>==>Return the pathname property: location.pathname. Set the pathname property: location ...<br>
+        <span>location.prototype</span> Prototype is used for adding new function to your object. It is littlebit advanced.<br>
+        <h3>Example scenario where the location object would be used  =></h3><br>
+        <br>
+        <br>
+        Click Below Button..<br><br>
+        <button id="btn" onclick="fun()">Redirect To Google</button><br>
+        <p>console ==></p>
+
+        <br>
+        <h2>* History Object:</h2><br>
+        object is used to navigate the user back and forth in the browser's history stack, and to add or remove entries from the history stack.<br>
+        For example, you can use the history.pushState() method to add a new entry to the history stack without reloading the web page, or you can use the history.back() method to go back one page in the history stack.
+
+    </p>
+   <!-- .................................................................................  -->
+    <hr>
+    <h1>Q2</h1>
+    <br>
+    <h3>(a)</h3>
+    console==>
+    <br>
+    <!-- ----------------------------------------------------------------------
+     -->
+     <h3>(b)</h3>
+     console==>
+     <h2>Navigator object </h2>The navigator object is a part of the Browser Object Model (BOM) in JavaScript that provides information about the user's browser and system. <br>
+     . It contains properties and methods that allow web developers to determine various aspects of the browser environment, such as browser name, version, and operating system
+      <br>
+      <hr>
+
+
+    <script>
+// Q1(a).........................................................................................
+        //  current URL 
+var currentUrl = window.location.href;
+
+// Get the sizes
+var windowWidth = window.innerWidth;
+var windowHeight = window.innerHeight;
+
+console.log("Current URL: " + currentUrl);
+console.log("Window size: " + windowWidth + " x " + windowHeight + " pixels");
+// (b)............................................................................................
+console.log(".....................................................................................")
+
+
+console.log(location.href);
+console.log(location.pathname);
+console.log(location.protocol);
+
+function fun(){
+    window.location="https://www.google.com/"
+}
+
+
+
+console.log("  screen object t ......................................................................................................")
+
+const screenWidth = screen.width;
+const screenHeight = screen.height;
+const screenColorDepth = screen.colorDepth;
+
+console.log(`Screen width: ${screenWidth}px`);
+console.log(`Screen height: ${screenHeight}px`);
+console.log(`Screen color depth: ${screenColorDepth} bits`);
+
+
+
+
+console.log("Navigator object ------------------------------------------------------------------------------")
+   
+   console.log(navigator.appName)
+   console.log(navigator.appVersion)
+   console.log(navigator.appCodeName)
+   console.log(navigator.javaEnabled)
+   console.log(navigator.cookieEnabled)
+   
+   </script>
+</body>
+</html>
